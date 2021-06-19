@@ -15,6 +15,19 @@ function Login(){
     const [senha, setSenha] = useState('');
     const [sucesso, setSucesso] = useState('');
 
+    const options = [
+      {
+        id: 1,
+        title: "Home",
+        link: "/"
+      },
+      {
+        id: 2,
+        title: "Cadastrar Cliente",
+        link: "/app/novocliente"
+      }
+    ]
+
     function LoginUsuario(){
       firebase.auth().signInWithEmailAndPassword(email, senha)
         .then(function(firebaseUser){
@@ -34,7 +47,7 @@ function Login(){
     }
 
     return <div>
-              <NavBar link="/" title="Home"/>            
+              <NavBar opcoes={options}/>
               <div className="d-flex align-items-center text-center form-container">
                 <form className="form-signin">
                   
@@ -61,7 +74,7 @@ function Login(){
                     <Link to="/app/resetsenha" className="mx-3">Esqueci minha senha</Link>
                     <Link to="/app/novaconta" className="mx-3">Criar uma conta</Link>
                   </div>
-                  <Footer />                  
+                  <Footer />
                 </form>
               </div>
           </div>
