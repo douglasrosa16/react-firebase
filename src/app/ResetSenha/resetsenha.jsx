@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link}  from 'react-router-dom';
+
+import Footer from '../Components/Footer';
+
 import './resetsenha.css';
 
 function ResetSenha(){
@@ -18,8 +21,7 @@ function ResetSenha(){
         <div className="login-links mt-5">
           <Link to="/app/novaconta" className="mx-3">Criar uma conta.</Link>
         </div>
-
-        <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido por 99 Coders</p>
+        <Footer />        
       </form>
     </div>
   }

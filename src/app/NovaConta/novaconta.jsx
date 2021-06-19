@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link}  from 'react-router-dom';
 import './novaconta.css';
+import Footer from '../Components/Footer';
 
 function NovaConta(){
     return <div className="d-flex align-items-center text-center form-container">
@@ -23,8 +24,7 @@ function NovaConta(){
         <div className="login-links mt-5">
           <Link to="/app" className="mx-3">Já tenho uma conta.</Link>
         </div>
-
-        <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido por 99 Coders</p>
+        <Footer />        
       </form>
     </div>
   }

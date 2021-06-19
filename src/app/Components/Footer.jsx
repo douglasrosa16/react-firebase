@@ -1,9 +1,8 @@
 import React from 'react';
 
-function Footer(props){
-  var ano = new Date().getFullYear();
-
-  return <h4>Desenvolvido na Unisystem - {ano}</h4>;
+function Footer(props){ 
+  
+  return <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido na Unisystem</p>;
 }
 
 export default Footer;

@@ -16,7 +16,7 @@ function App(){
     <Route exact path='/app/novaconta' component={NovaConta} />    
     <Route exact path='/app/resetsenha' component={ResetSenha} />    
     <Route exact path='/app/home' component={Home} />    
-    <Route exact path='/app/novocliente' component={NovoCliente} />    
+    <Route exact path='/app/novocliente' component={NovoCliente} />        
     </BrowserRouter>;
   }
  
